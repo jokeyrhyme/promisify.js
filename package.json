@@ -1,0 +1,40 @@
+{
+  "name": "@jokeyrhyme/promisify",
+  "description": "wrap a Node.js-style asynchronous function so that it returns a Promise",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/promisify.js/issues"
+  },
+  "devDependencies": {
+    "@jokeyrhyme/eslint-config-es2015": "1.0.0",
+    "@jokeyrhyme/eslint-config-es5": "1.0.0",
+    "ava": "0.7.0",
+    "eslint": "1.10.3",
+    "eslint-config-semistandard": "5.0.0",
+    "eslint-config-standard": "4.4.0",
+    "eslint-plugin-standard": "1.3.1",
+    "fixpack": "2.2.0",
+    "npm-run-all": "1.3.4",
+    "nyc": "4.0.1"
+  },
+  "homepage": "https://github.com/jokeyrhyme/promisify.js#readme",
+  "keywords": [
+    "callback",
+    "callbacks",
+    "promise",
+    "promises"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/promisify.js.git"
+  },
+  "scripts": {
+    "eslint": "eslint --fix .",
+    "fixpack": "fixpack",
+    "nyc": "nyc check-coverage -b 90 -f 0 -l 90 -s 90",
+    "posttest": "npm-run-all eslint fixpack nyc",
+    "test": "nyc ava"
+  }
+}
