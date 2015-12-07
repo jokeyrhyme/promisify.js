@@ -12,11 +12,23 @@ const promisify = require('@jokeyrhyme/promisify');
 
 const fs = require('fs');
 
-const readdir = promisify(fs, fs.readdir);
+const readdir = promisify(fs.readdir);
 
 fs.readdir(process.cwd())
   .then((result) => { /* ... */ })
   .catch((err) => { /* ... */ });
+```
+
+
+## API
+
+
+### `promisify (context?: Object, Function) => Promiser`
+
+```
+interface Promiser {
+  (...args: Any[]) => Promise
+}
 ```
 
 

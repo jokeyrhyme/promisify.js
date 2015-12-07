@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+interface Promiser {
+  (...args: Any[]) => Promise
+}
+
+promisify (context?: Object, Function) => Promiser
+*/
 module.exports = function promisify () {
   var ctx, fn;
   if (arguments.length === 2) {
