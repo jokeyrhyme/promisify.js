@@ -2,6 +2,7 @@
 
 wrap a Node.js-style asynchronous function so that it returns a Promise
 
+[![npm module](https://img.shields.io/npm/v/@jokeyrhyme/promisify.svg)](https://www.npmjs.com/package/@jokeyrhyme/promisify)
 [![Build Status](https://travis-ci.org/jokeyrhyme/promisify.js.png)](https://travis-ci.org/jokeyrhyme/promisify.js)
 
 
