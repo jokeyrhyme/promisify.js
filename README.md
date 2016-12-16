@@ -6,6 +6,11 @@ wrap a Node.js-style asynchronous function so that it returns a Promise
 [![Build Status](https://travis-ci.org/jokeyrhyme/promisify.js.png)](https://travis-ci.org/jokeyrhyme/promisify.js)
 
 
+## ABANDONED
+
+Use [pify](https://github.com/sindresorhus/pify) instead
+
+
 ## Usage
 
 ```js
